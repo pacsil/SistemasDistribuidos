@@ -25,3 +25,10 @@ Em seguida, você pode iniciar o aplicativo e testar o endpoint /integral usando
 EP3 - Crie uma aplicacao JAVA utilizando MPI
 
 Para gerar fractais usando MPI em Java, podemos utilizar uma abordagem iterativa para calcular a cor de cada pixel da imagem do fractal. O código abaixo utiliza o conjunto de Mandelbrot como exemplo de fractal e divide a imagem em partes iguais, que serão processadas paralelamente pelos processos MPI. Este código divide a imagem do fractal em partes iguais entre os processos MPI, calcula o conjunto de Mandelbrot para cada parte e salva a parte da imagem correspondente a cada processo em um arquivo PNG. Note que é necessário inicializar e finalizar o MPI no início e no final do código, respectivamente, e identificar o processo atual e o total de processos.
+
+Para executar o código que gera um fractal de Mandelbrot usando MPI em Java, siga os passos abaixo:
+
+    Certifique-se de ter o MPI instalado em seu sistema e configurado corretamente.
+    Compile o código usando o seguinte comando no terminal: mpijavac MandelbrotFractalMPI.java
+    Execute o programa MPI com o seguinte comando: mpirun -np <número de processos> java MandelbrotFractalMPI, onde <número de processos> é o número de processos MPI que você deseja executar.
+    O programa irá gerar várias imagens do fractal, uma para cada processo MPI, nomeadas como "mandelbrot_0.png", "mandelbrot_1.png", etc.
