@@ -21,3 +21,7 @@ public class MyApplication {
 }
 
 Em seguida, você pode iniciar o aplicativo e testar o endpoint /integral usando um navegador ou ferramenta de teste de API, como o Postman. Certifique-se de passar os parâmetros corretos, como a, b, n, function e method. O valor de retorno será uma string formatada que contém o valor da integral.
+
+EP3 - Crie uma aplicacao JAVA utilizando MPI
+
+Para gerar fractais usando MPI em Java, podemos utilizar uma abordagem iterativa para calcular a cor de cada pixel da imagem do fractal. O código abaixo utiliza o conjunto de Mandelbrot como exemplo de fractal e divide a imagem em partes iguais, que serão processadas paralelamente pelos processos MPI. Este código divide a imagem do fractal em partes iguais entre os processos MPI, calcula o conjunto de Mandelbrot para cada parte e salva a parte da imagem correspondente a cada processo em um arquivo PNG. Note que é necessário inicializar e finalizar o MPI no início e no final do código, respectivamente, e identificar o processo atual e o total de processos.
